@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <title>Seleções de Futebol</title>
+    <style>
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-img-top {
+            height: 350px;
+            object-fit: cover;
+        }
+        .card-body {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .card-footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid text-warning text-uppercase text-center">
+    <div class="container">
+        <h1>Seleções</h1>
+        <p>Jogadores das seleções da Colômbia, Brasil, Japão e Argentina na Copa do Mundo</p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Navegação abas -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="colombia-tab" data-toggle="tab" href="#colombia" role="tab" aria-controls="colombia" aria-selected="true">Colômbia</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="brasil-tab" data-toggle="tab" href="#brasil" role="tab" aria-controls="brasil" aria-selected="false">Brasil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="japao-tab" data-toggle="tab" href="#japao" role="tab" aria-controls="japao" aria-selected="false">Japão</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="argentina-tab" data-toggle="tab" href="#argentina" role="tab" aria-controls="argentina" aria-selected="false">Argentina</a>
+        </li>
+    </ul>
+    
+    <!-- Conteúdo das Abas -->
+    <div class="tab-content" id="myTabContent">
+        
+        <!-- Seção Colômbia -->
+        <div class="tab-pane fade show active" id="colombia" role="tabpanel" aria-labelledby="colombia-tab">
+            <h2 class="text-center mt-4">Seleção da Colômbia</h2>
+            <div class="row">
+                <!-- Card 1 Colômbia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://conteudo.imguol.com.br/c/esporte/3b/2023/10/12/james-rodriguez-da-colombia-comemora-seu-gol-contra-o-uruguai-pelas-eliminatorias-1697146227686_v2_1x1.jpg" class="card-img-top" alt="James Rodríguez">
+                        <div class="card-body">
+                            <h4 class="card-title">James Rodríguez</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://ohoje.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-07-13-at-14.17.38.jpeg" class="card-img-top" alt="Richard Ríos">
+                        <div class="card-body">
+                            <h4 class="card-title">Richard Ríos</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://s2-extra.glbimg.com/oVZngeZuZhA9d85FMBD-vBfqhsE=/0x0:1731x1494/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f551ea7087a47f39ead75f64041559a/internal_photos/bs/2023/G/T/LAv4MyRnmlgWuXOLIKeA/104656489-colombias-forward-luis-diaz-controls-the-ball-during-the-2026-fifa-world-cup-south-am.jpg" class="card-img-top" alt="Luis Díaz">
+                        <div class="card-body">
+                            <h4 class="card-title">Luis Díaz</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        <!-- Linha 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVhv95okPD9ehwrvNgDn7OkAy0YOlWMJViqkhB_XI8qBZwQRY9Yp6JpyAyomTg3wS5yE&usqp=CAU" class="card-img-top" alt="Daniel Muñoz">
+                        <div class="card-body">
+                            <h4 class="card-title">Daniel Muñoz</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://pbs.twimg.com/profile_images/1614743197145612294/Ka7LSQ1E_400x400.jpg" class="card-img-top" alt="Juan Cuadrado">
+                            <div class="card-body">
+                                <h4 class="card-title">Juan Cuadrado</h4>
+                                <p class="card-text">Meia</p>
+                                <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://caracol.com.co/resizer/v2/JUTMHVSYQFGKXI7RJ4PA3FX3Y4.jpg?auth=02d6b1b8c4633a4137ff14224c0437bce487ef8fb58eabd46e209d987dc506f7&width=1024&height=1024&quality=70&smart=true" class="card-img-top" alt="Jhon Córdoba">
+                            <div class="card-body">
+                                <h4 class="card-title">Jhon Córdoba</h4>
+                                <p class="card-text">Atacante</p>
+                                <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+        <!-- Linha 3 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJEPMa6gcC050LdGquQEDZkK6m9iaxPBOBDxX7BAsP33P7r_u__6waYjI4-IoON-FXqhY&usqp=CAU" class="card-img-top" alt="Camilo Vargas">
+                        <div class="card-body">
+                            <h4 class="card-title">Camilo Vargas</h4>
+                                <p class="card-text">Goleiro</p>
+                                <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7vlMxZAYOxoaYr8hJ733ksUOV_S5vGizr4bxKEpGInT7deZ-Su48FFId-qzRYdas3aM&usqp=CAU" class="card-img-top" alt="Jhon Arias">
+                                <div class="card-body">
+                                    <h4 class="card-title">Jhon Arias</h4>
+                                    <p class="card-text">Meia</p>
+                                    <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://www.directvsports.com/__export/1710533711765/sites/dsports/img/2024/03/15/cfcpavty.jpg_264373248.jpg" class="card-img-top" alt="Yerry Mina">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Yerry Mina</h4>
+                                        <p class="card-text">Zageiro</p>
+                                        <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+        <!-- Linha 4 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.eje21.com.co/site/wp-content/uploads/2022/01/davinson-sanchez.-imagen-fcf..png" class="card-img-top" alt="Davinson Sánchez">
+                            <div class="card-body">
+                                <h4 class="card-title">Davinson Sánchez</h4>
+                                <p class="card-text">Zageiro</p>
+                                <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://strikers.futbol/__export/1625065677341/sites/strikers/img/2021/06/30/xjuega-borre-frente-a-brasil.jpeg_264374142.jpeg" class="card-img-top" alt="Rafael Santos Borré">
+                            <div class="card-body">
+                                <h4 class="card-title">Rafael Santos Borré</h4>
+                                <p class="card-text">Atacante</p>
+                                <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                 <!-- Card 3 -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://headbandsandheartbreak.wordpress.com/wp-content/uploads/2018/07/wilmar-barrios.jpg?w=584" class="card-img-top" alt="Wilmar Barrios">
+                            <div class="card-body">
+                                <h4 class="card-title">Wilmar Barrios</h4>
+                                <p class="card-text">Meia</p>
+                                <a href="https://www.google.com/search?sca_esv=969a37d7d8df40c7&q=seleção+colombiana+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDZKNrBQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWzeLUnNTDyw8vzldIzs_Jz03KTMxLVEhJVUgrLUlNys9RyMpPT0zJL0ot3sHKCACPQC4XZgAAAA&sa=X&ved=2ahUKEwjQv9rI8NSJAxWQHbkGHQ3oK9sQMXoECCMQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- Seção Brasil -->
+        <div class="tab-pane fade" id="brasil" role="tabpanel" aria-labelledby="brasil-tab">
+            <h2 class="text-center mt-4">Seleção do Brasil</h2>
+            <div class="row">
+                <!-- Card 1 Brasil -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://jornaltribuna.com.br/wp-content/uploads/2021/10/neymar.jpeg" class="card-img-top" alt="Neymar">
+                        <div class="card-body">
+                            <h4 class="card-title">Neymar</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/uploads/2024/10/Vinicius-Jr-selecao-brasileirao.jpg" class="card-img-top" alt="Vinicius Júnior">
+                        <div class="card-body">
+                            <h4 class="card-title">Vinicius Júnior</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://cdn.conmebol.com/wp-content/uploads/2024/01/2d7e38aeebb8c49b0cb29a45d0daa559f905d793-1024x683.jpg" class="card-img-top" alt="Endrick">
+                        <div class="card-body">
+                            <h4 class="card-title">Endrick</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 2 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.lequipe.fr/_medias/img-photo-jpg/raphinha-lors-de-la-victoire-du-bresil-au-japon-0-1-atsushi-tokumaru-presse-sports/1500000001665080/0:0,1998:1332-828-552-75/9c368.jpg" class="card-img-top" alt="Raphinha">
+                        <div class="card-body">
+                            <h4 class="card-title">Raphinha</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://estaticos-cdn.prensaiberica.es/clip/9b10ad1e-f370-477a-a8fd-23c7136417b1_alta-libre-aspect-ratio_default_0.jpg" class="card-img-top" alt="Luiz Henrique">
+                        <div class="card-body">
+                            <h4 class="card-title">Luiz Henrique</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://tntsports.com.br/__export/1728663687333/sites/esporteinterativo/img/2024/10/11/20241011-132120_2124845_2871.jpg" class="card-img-top" alt="Igor Jesus Maciel da Cruz">
+                        <div class="card-body">
+                            <h4 class="card-title">Igor Jesus Maciel da Cruz</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 3 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/Lucas-Paqueta-e-acusado-de-integrar-esquema-de-manipulacao-de-apostas-esportivas-e1717519726682.jpg?w=880" class="card-img-top" alt="Lucas Paquetá">
+                        <div class="card-body">
+                            <h4 class="card-title">Lucas Paquetá</h4>
+                                <p class="card-text">Meia</p>
+                                <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.mulher.com.br/wp-content/uploads/migration/casemiro-selecao-112022-1400x800.jpg" class="card-img-top" alt="Carlos Henrique Casemiro">
+                            <div class="card-body">
+                                <h4 class="card-title">Carlos Henrique Casemiro</h4>
+                                <p class="card-text">Meia</p>
+                                <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://files.98live.com.br/news/22636/thumb/v1729091845590/400x225/vejacomofoiaestreiadomatheuspereirapelaselecaobrasileira.jpg" class="card-img-top" alt="Matheus Pereira">
+                            <div class="card-body">
+                                <h4 class="card-title">Matheus Pereira</h4>
+                                <p class="card-text">Meia</p>
+                                <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Linha 4 -->
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/11/abner-vinicius-selecao-brasileira-e1730488534818.jpeg?w=880" class="card-img-top" alt="Abner Vinícius">
+                            <div class="card-body">
+                                <h4 class="card-title">Abner Vinícius</h4>
+                                <p class="card-text">Zageiro</p>
+                                <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                        <img src="https://tntsports.com.br/__export/1703615067979/sites/esporteinterativo/img/2023/10/13/ederson_-_gettyimages-1677287656.jpg_1902800913.jpg" class="card-img-top" alt="Ederson Santana de Moraes">
+                            <div class="card-body">
+                                <h4 class="card-title">Ederson Santana de Moraes</h4>
+                                <p class="card-text">Goleiro</p>
+                                <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                        <img src="https://s2.glbimg.com/B27GB5LJZtc7h3HCSuoI6jawAo8=/smart/e.glbimg.com/og/ed/f/original/2018/06/19/gettyimages-977938740edit.jpg" class="card-img-top" alt="Alisson Becker">
+                            <div class="card-body">
+                                <h4 class="card-title">Alisson Becker</h4>
+                                <p class="card-text">Goleiro</p>
+                                <a href="https://www.google.com/search?client=opera&hs=VPJ&sca_esv=1d2fbb10e57e1f9d&q=seleção+brasileira+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2NYpXQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWueLUnNTDyw8vzldIKkoszsxJzSxKVMjKT09MyS9KLd7ByggARy8-XFsAAAA&sa=X&ved=2ahUKEwiukfLd-NSJAxXZIbkGHa8DOosQMXoECCIQDA&biw=652&bih=627&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Seção Japão -->
+        <div class="tab-pane fade" id="japao" role="tabpanel" aria-labelledby="japao-tab">
+            <h2 class="text-center mt-4">Seleção do Japão</h2>
+            <div class="row">
+                <!-- Card 1 Japão -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zerozero.pt/img/planteis/080/7353080_.png" class="card-img-top" alt="Takefusa Kubo">
+                        <div class="card-body">
+                            <h4 class="card-title">Takefusa Kubo</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6AEPn0IUrGFSG5mYFBKimZH0Pum4k5Bl13rLSr5W9shVhb8sW01-59GuiuHRoOW5srY&usqp=CAU" class="card-img-top" alt="Ayase Ueda">
+                        <div class="card-body">
+                            <h4 class="card-title">Ayase Ueda</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://i.dailymail.co.uk/1s/2021/07/16/09/45517319-0-image-a-18_1626425863182.jpg" class="card-img-top" alt="Kyogo Furuhashi">
+                        <div class="card-body">
+                            <h4 class="card-title">Kyogo Furuhashi</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zerozero.pt/img/planteis/075/7353075_.png" class="card-img-top" alt="Kaoru Mitoma">
+                        <div class="card-body">
+                            <h4 class="card-title">Kaoru Mitoma</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zerozero.pt/img/planteis/069/7353069_.png" class="card-img-top" alt="Wataru Endo">
+                        <div class="card-body">
+                            <h4 class="card-title">Wataru Endo</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://i2-prod.liverpool.com/incoming/article29403088.ece/ALTERNATES/s1200b/0_TakumiMinamino.jpg" class="card-img-top" alt="Takumi Minamino">
+                        <div class="card-body">
+                            <h4 class="card-title">Takumi Minamino</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 3 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zerozero.pt/img/planteis/064/7353064_.png" class="card-img-top" alt="Ko Itakura">
+                        <div class="card-body">
+                            <h4 class="card-title">Ko Itakura</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zerozero.pt/img/planteis/060/7353060_.png" class="card-img-top" alt="Shogo Taniguchi">
+                        <div class="card-body">
+                            <h4 class="card-title">Shogo Taniguchi</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zerozero.pt/img/planteis/066/7353066_.png" class="card-img-top" alt="Takehiro Tomiyasu">
+                        <div class="card-body">
+                            <h4 class="card-title">Takehiro Tomiyasu</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 4 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://romapress.net/wp-content/uploads/2022/12/ritsu-doan-700x467.jpg" class="card-img-top" alt="Ritsu Doan">
+                        <div class="card-body">
+                            <h4 class="card-title">Ritsu Doan</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2024-01/240124-Zion-Suzuki-al-1225-c2a15c.jpg" class="card-img-top" alt="Zion Suzuki">
+                        <div class="card-body">
+                            <h4 class="card-title">Zion Suzuki</h4>
+                            <p class="card-text">Goleiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 3 -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.shutterstock.com/editorial/image-editorial/M7T0Ad43Ndjcga18MDE5MjE=/taishi-brandon-nozawa-jpn---football--440nw-10778100b.jpg" class="card-img-top" alt="Taishi Brandon Nozawa">
+                        <div class="card-body">
+                            <h4 class="card-title">Taishi Brandon Nozawa</h4>
+                            <p class="card-text">Goleiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=JEz&sca_esv=85b561e56a3fcf31&q=seleção+japonesa+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MK7IMDVQQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJW9eLUnNTDyw8vzlfISizIz0stTlRISVVIKy1JTcrPUcjKT09MyS9KLd7ByggAosP2ymQAAAA&sa=X&ved=2ahUKEwjZoena_9SJAxWGHbkGHZKSCH0QMXoECBsQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seção Argentina -->
+        <div class="tab-pane fade" id="argentina" role="tabpanel" aria-labelledby="argentina-tab">
+            <h2 class="text-center mt-4">Seleção da Argentina</h2>
+            <div class="row">
+                <!-- Card 1 Argentina -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/A3DC/production/_127984914_mediaitem127984913.jpg.webp" class="card-img-top" alt="Lionel Messi">
+                        <div class="card-body">
+                            <h4 class="card-title">Lionel Messi</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://elintransigente.com/wp-content/uploads/2024/03/Garnacho-Argentina.jpg.webp" class="card-img-top" alt="Alejandro Garnacho">
+                        <div class="card-body">
+                            <h4 class="card-title">Alejandro Garnacho</h4>
+                            <p class="card-text">MAtacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYktgSTsH7Zy7wvlIL3n_U2oDfoaDrMiRPYNM10n_cZqlOEb6aF9MkLsGn8DmSBriscQ&usqp=CAU" class="card-img-top" alt="Paulo Dybala">
+                        <div class="card-body">
+                            <h4 class="card-title">Paulo Dybala</h4>
+                            <p class="card-text">Atacante</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 2 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://s2-oglobo.glbimg.com/hBErx2ITAsJG8PmSN7IuIzdMgeM=/0x0:6716x4477/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/X/i/ZKvF8ARMmBACMIAKJJEQ/107465788-east-rutherford-new-jersey-june-25-angel-di-maria-of-argentina-gestures-during-the-conme.jpg" class="card-img-top" alt="Ángel Di María">
+                        <div class="card-body">
+                            <h4 class="card-title">Ángel Di María</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://vcdn1-vnexpress.vnecdn.net/2024/06/11/Enzo-Fernandez-mobile-3306-1718078665.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=Cl4lIT1LessejeLDAT312g" class="card-img-top" alt="Enzo Fernández">
+                        <div class="card-body">
+                            <h4 class="card-title">Enzo Fernández</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://uploads.metroimg.com/wp-content/uploads/2022/12/17191636/Design-sem-nome-61-5.jpg" class="card-img-top" alt="Rodrigo de Paul">
+                        <div class="card-body">
+                            <h4 class="card-title">Rodrigo de Paul</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 3 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://copaamerica.com/_next/image?url=https%3A%2F%2Fcopaamerica-imagens-prod.s3.sa-east-1.amazonaws.com%2Fargentina_ecuador_licha_martinez_34b65cafaa.jpg&w=3840&q=75" class="card-img-top" alt="Lisandro Martínez">
+                        <div class="card-body">
+                            <h4 class="card-title">Lisandro Martínez</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://image-service.onefootball.com/transform?w=280&h=210&dpr=2&image=https%3A%2F%2Fsiempreconargentina.com%2Fwp-content%2Fuploads%2F2024%2F11%2Fargentina-v-ecuador-conmebol-copa-america-usa-2024-3-1-scaled-e1731001386838.jpg" class="card-img-top" alt="Nicolás Otamendi">
+                        <div class="card-body">
+                            <h4 class="card-title">Nicolás Otamendi</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.ogol.com.br/img/jogadores/new/83/45/1168345_marcos_acuna_20240910115710.jpg" class="card-img-top" alt="Marcos Acuña">
+                        <div class="card-body">
+                            <h4 class="card-title">Marcos Acuña</h4>
+                            <p class="card-text">Zageiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linha 4 -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://tmssl.akamaized.net//images/foto/galerie/paz-nicolas-argentina-2024-1729078957-151531.jpg?lm=1729078968" class="card-img-top" alt="Nico Paz">
+                        <div class="card-body">
+                            <h4 class="card-title">Nico Paz</h4>
+                            <p class="card-text">Meia</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://cdn.conmebol.com/wp-content/uploads/2017/01/benitez.jpg" class="card-img-top" alt="Walter Benítez">
+                        <div class="card-body">
+                            <h4 class="card-title">Walter Benítez</h4>
+                            <p class="card-text">Goleiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://assets-fr.imgfoot.com/media/cache/1200x1200/geronimo-rulli-2324-66b0ebbf4a267.jpg" class="card-img-top" alt="Gerónimo Rulli">
+                        <div class="card-body">
+                            <h4 class="card-title">Gerónimo Rulli</h4>
+                            <p class="card-text">Goleiro</p>
+                            <a href="https://www.google.com/search?client=opera&hs=FvJ&sca_esv=85b561e56a3fcf31&q=seleção+argentina+de+futebol+jogadores&stick=H4sIAAAAAAAAAONgFuLUz9U3MErKiC9TQjC1ZLOTrfSLC_KLSoqhVHxJamKuVVF-cUlq0SJWjeLUnNTDyw8vzldILEpPzSvJzEtUSElVSCstSU3Kz1HIyk9PTMkvSi3ewcoIADKRsf9lAAAA&sa=X&ved=2ahUKEwiDmsKIgNWJAxUQhJUCHS9YKmwQMXoECBwQDA&biw=1364&bih=634&dpr=1" class="btn btn-primary">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
